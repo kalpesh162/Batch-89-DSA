@@ -1,0 +1,21 @@
+package linear;
+
+import java.util.Scanner;
+
+public class App {
+	
+	
+
+	public static void main(String[] args) {
+
+		Scanner scanner=new Scanner(System.in);
+		int size;
+		System.out.println("Enter Size");
+		size=scanner.nextInt();
+		
+		
+		int arr[]=new int[size];
+		
+	}
+
+}

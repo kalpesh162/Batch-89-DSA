@@ -1,0 +1,31 @@
+package p1;
+
+import java.util.Scanner;
+
+public class App {
+	
+	
+	public static void main(String[] args) {
+			int size;
+			Scanner scanner=new Scanner(System.in);
+			System.out.println("Enter Size");
+			size=scanner.nextInt();
+			int arr[]=new int[size];
+			
+			inputArray(arr);
+			
+			display(arr);
+		
+	}
+
+	private static void display(int[] arr) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void inputArray(int[] arr) {
+		
+		
+	}
+
+}

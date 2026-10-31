@@ -1,0 +1,75 @@
+package binary;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		int size;
+		System.out.println("Enter Size");
+		size = scanner.nextInt();
+
+		int arr[] = new int[size];
+
+		input_array(arr);
+
+		display(arr);
+
+		System.out.println("Element to Search Enter  ");
+		int ele = scanner.nextInt();
+
+		System.out.println("Before");
+		long startTime = System.currentTimeMillis();
+		int index = linear_search(arr, ele);
+		long endTime = System.currentTimeMillis();
+		System.out.println("After");
+		System.out.println("Time Taken  " + (endTime - startTime));
+
+		if (index != -1)
+			System.out.println("Element FOUND AT " + index + "    " + ele);
+		else
+			System.out.println("Element NOT  FOUND  " + ele);
+
+	}
+
+	private static int binary_search(int[] arr, int ele) {
+		int low=0;
+		int high=arr.length-1;
+		while(low<=high) {
+			  // mid
+			int mid=(low+high)/2;
+			
+			  // mid --> ele  == ele  return mid
+			if(arr[mid]==ele) return mid;
+			
+			else if(arr[mid]<ele)
+				low=mid+1;
+			else
+				high=mid-1; 
+			
+		}
+		
+		
+		
+		return -1;
+	}
+
+	private static void display(int[] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			System.out.printf("%-8d  %-9d  \n", i, arr[i]);
+		}
+	}
+
+	private static void input_array(int[] arr) {
+
+		Random random = new Random();
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = random.nextInt(100000000);
+		}
+
+	}
+
+}

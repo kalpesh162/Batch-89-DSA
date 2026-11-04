@@ -10,4 +10,12 @@
     <fullyQualifiedTypeName name="java.awt.event.FocusAdapter"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="p1.SinglyLinkedList"/>
+    <fullyQualifiedTypeName name="java.util.PrimitiveIterator"/>
+    <fullyQualifiedTypeName name="java.security.PublicKey"/>
+    <fullyQualifiedTypeName name="javax.swing.border.EtchedBorder"/>
+    <fullyQualifiedTypeName name="p1.SinglyLinkedList.Node"/>
+    <fullyQualifiedTypeName name="p1.DoublyLinkedList"/>
+    <fullyQualifiedTypeName name="p1.DoublyLinkedList.Node"/>
+    <fullyQualifiedTypeName name="java.lang.NoClassDefFoundError"/>
 </qualifiedTypeNameHistroy>
